@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Pixel Font';
+    src: url('PixelFontRegular.woff2') format('woff2'),
+        url('PixelFontRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.font{
+    font-family: 'Pixel Font';
+}
+
+.px{
+    font-size: 50px;
+}
+
+.em{
+    font-size: 3.1em;
+}
+
+.ch{
+    font-size: 6.5ch;
+}
+
+.rem{
+    font-size: 3.3rem;
+}
+
+.vh{
+    font-size: 7.3vh;
+}
+
+.cqw{
+    font-size: 3.5cqw;
+}
+
+.dvw{
+    font-size: 3.5dvw;
+}
+
+.vw{
+   font-size: 3.5vw; 
+}
+
+.vmax{
+    font-size: 3.5vmax;
+}
