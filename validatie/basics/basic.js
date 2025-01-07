@@ -22,3 +22,4 @@ function moveParagraph () {
 //use meaningful names for variables and function
 //never set styling directtly from js , pass value through a custom property 
 //always use a button to trigger a selection 
+//follow the same order in js as in HTML
