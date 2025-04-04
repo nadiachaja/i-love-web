@@ -1,0 +1,9 @@
+{% render 'partials/head.liquid', title: 'Home' %}
+
+<section>
+    {% for file in files %}
+        <a href="/journal/{{file|slice:0,-3}}">{{ file|slice:0,-3 }}</a>
+    {% endfor %}
+</section>
+
+{% render 'partials/footer.liquid' %}
