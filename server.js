@@ -8,7 +8,7 @@ import { Liquid } from 'liquidjs';
 //zodat we bestanden en mappen in kunnen lezen
 import { readdir, readFile } from 'node:fs/promises'
 
-import {marked} from 'marked'
+import { marked } from 'marked'
 
 const files = await readdir('content')
 
@@ -30,19 +30,35 @@ app.set('views', './views')
 // Zorg dat werken met request data makkelijker wordt
 app.use(express.urlencoded({ extended: true }))
 
+
+
 app.get('/', async function (request, response) {
     response.render('index.liquid')
 })
 
 
+// app.get('/journal', async function (request, response) {
+//     response.render('journal.liquid', { files: files })
+// })
+
 app.get('/journal', async function (request, response) {
-    response.render('journal.liquid', {files: files})
+    const files = await readdir('./content')
+
+    const entries = await Promise.all(files.map(async (file) => {
+        const rawContent = await readFile(`./content/${file}`, 'utf8')
+        return {
+            name: file.slice(0, -3), // Verwijder .md
+            html: marked.parse(rawContent),
+        }
+    }))
+
+    response.render('journal.liquid', { entries })
 })
 
 app.get('/journal/:slug', async function (request, response) {
     const fileContents = await readFile('content/' + request.params.slug + '.md', { encoding: 'utf8' })
     const markedUpFileContents = marked.parse(fileContents)
-    response.render('artikel.liquid', {fileContents: markedUpFileContents })
+    response.render('artikel.liquid', { fileContents: markedUpFileContents })
 })
 
 

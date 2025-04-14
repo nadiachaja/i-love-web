@@ -1,9 +1,23 @@
 {% render 'partials/head.liquid', title: 'Home' %}
 
-<section>
+{% comment %} <section class="specifiek-journal">
     {% for file in files %}
-        <a href="/journal/{{file|slice:0,-3}}">{{ file|slice:0,-3 }}</a>
+        <a class="journals" href="/journal/{{file|slice:0,-3}}">{{ file|slice:0,-3 }}</a>
     {% endfor %}
+</section> {% endcomment %}
+
+<section class="specifiek-journal">
+  {% for entry in entries %}
+    <details class="journal-entry">
+      <summary>
+        <span class="icon"></span>
+        {{ entry.name }}
+      </summary>
+      <div class="entry-content">
+        {{ entry.html }}
+      </div>
+    </details>
+  {% endfor %}
 </section>
 
 {% render 'partials/footer.liquid' %}
