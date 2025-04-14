@@ -46,6 +46,31 @@ app.get('/journal/:slug', async function (request, response) {
 })
 
 
+app.get('/website', async function (request, response) {
+    response.render('website.liquid')
+})
+
+
+app.get('/foto', async function (request, response) {
+    response.render('foto.liquid')
+})
+
+
+app.get('/weloveweb', async function (request, response) {
+    response.render('weloveweb.liquid')
+})
+
+
+app.get('/profile', async function (request, response) {
+    response.render('profile.liquid')
+})
+
+
+
+app.get('/digitalgarden', async function (request, response) {
+    response.render('digitalgarden.liquid')
+})
+
 app.get('/basic', async function (request, response) {
     response.render('basic.liquid')
 })
@@ -53,6 +78,23 @@ app.get('/basic', async function (request, response) {
 app.get('/input', async function (request, response) {
     response.render('input.liquid')
 })
+
+app.get('/funcionaliteit', async function (request, response) {
+    response.render('funcionaliteit.liquid')
+})
+
+app.get('/font', async function (request, response) {
+    response.render('font.liquid')
+})
+
+app.get('/circle', async function (request, response) {
+    response.render('circle.liquid')
+})
+
+app.get('/validatie', async function (request, response) {
+    response.render('validatie.liquid')
+})
+
 
 // Stel het poortnummer in waar Express op moet gaan luisteren
 // Lokaal is dit poort 8000, als dit ergens gehost wordt, is het waarschijnlijk poort 80
