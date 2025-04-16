@@ -37,22 +37,8 @@ app.get('/', async function (request, response) {
 })
 
 
-// app.get('/journal', async function (request, response) {
-//     response.render('journal.liquid', { files: files })
-// })
-
 app.get('/journal', async function (request, response) {
-    const files = await readdir('./content')
-
-    const entries = await Promise.all(files.map(async (file) => {
-        const rawContent = await readFile(`./content/${file}`, 'utf8')
-        return {
-            name: file.slice(0, -3), // Verwijder .md
-            html: marked.parse(rawContent),
-        }
-    }))
-
-    response.render('journal.liquid', { entries })
+    response.render('journal.liquid', { files: files })
 })
 
 app.get('/journal/:slug', async function (request, response) {

@@ -49,25 +49,3 @@ a:hover {
    text-decoration: none;
    color: black;
 }
-
-.journal-entry summary .icon::before {
-    content: "📘";
-    margin-right: 0.5rem;
-    transition: all 0.2s ease;
-  }
-  
-  .journal-entry[open] summary .icon::before {
-    content: "📖";
-  }
-
-  details summary {
-    list-style: none;    
-  }
-  
-  details summary::-webkit-details-marker {
-    display: none;      
-  }
-  
-  details summary::marker {
-    display: none;    
-  }
