@@ -11,9 +11,9 @@ stofjes gelukshormoon
 
 digitale connectie
 
+<br>
 
-
-soft ui 
+**soft ui**
 
 orchild
 ronde vormen (afgeronde hoeken)
@@ -28,7 +28,7 @@ suupaa
 - menu simpel (grote knoppen)
 
 
-motion 
+**motion**
 
 seen 
 - speelse website 
@@ -53,13 +53,13 @@ freder
 - sticky header 
 
 
-geluid
+**sound**
 - geluid aan bepaalde knoppen 
 - extra dimensie 
 - niet te veel geluid
 
 
-content 
+**content**
 - hoe lezen mensen tekst 
 - complex naar simpel content belangrijk maken 
 - makkelijk begrijpelijk maken 
