@@ -1,8 +1,8 @@
 
-GSAP https://gsap.com/
-animation taal 
-help met jouw iets te maken 
-je kan heel veel maken met GSAP kan best overweldigend zijn als je begint <br>
+GSAP https://gsap.com/ <br>
+Animation taal <br>
+Help met jouw iets te maken <br>
+Je kan heel veel maken met GSAP kan best overweldigend zijn als je begint <br>
 <img src="https://github.com/user-attachments/assets/ca45e289-8285-453e-9ae0-9dc06f52447f" width="300" height="350" alt="">
 
 method is wat er gebeurt
