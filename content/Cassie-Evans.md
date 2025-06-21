@@ -5,8 +5,8 @@ Help met jouw iets te maken <br>
 Je kan heel veel maken met GSAP kan best overweldigend zijn als je begint <br>
 <img src="https://github.com/user-attachments/assets/ca45e289-8285-453e-9ae0-9dc06f52447f" width="300" height="350" alt="">
 
-method is wat er gebeurt
-target is welk element
+method is wat er gebeurt <br>
+target is welk element <br>
 vars is wat er veranderd wordt <br>
 <img src="https://github.com/user-attachments/assets/45c396bd-3700-411e-8b1a-7a816ca8daf7" width="300" height="350" alt="">
 
